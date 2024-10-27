@@ -1,0 +1,99 @@
+*{
+    font-family: 'Mali', cursive;
+    color: white;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(grafika/test.gif);
+    margin: 0 auto;
+}
+
+.int{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.lk{
+    text-decoration: none;
+}
+
+.lek{
+      height: 100px;
+      width: 250px;
+      background-color: rgba(69, 69, 69, 0.8);
+      border: 0 auto;
+      border-radius: 10px;
+      line-height: 100px;
+      display: inline-block;
+      margin: 40px;
+}
+
+
+
+
+h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#CR{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lek:hover{
+    background-color: rgba(135, 207, 235, 0.28);
+    transition: 0.7s;
+    box-shadow: 0px 0px 10px 5px skyblue;
+}
+
+.str:hover{
+    background-color: rgba(135, 207, 235, 0.28);
+    transition: 0.7s;
+    box-shadow: 0px 0px 10px 5px skyblue;
+}
+
+fieldset{
+    border: 2px solid #fff;
+    color: white;
+    text-align: center;
+    width: 1010px;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+legend{
+    padding: 0 10px;
+}
+footer{
+    box-sizing: border-box;
+    clear: both;
+    padding-bottom: 5px;
+}
+
+.str:hover{
+    background-color: rgba(135, 207, 235, 0.28);
+    transition: 0.7s;
+    box-shadow: 0px 0px 10px 5px skyblue;
+}
+  
+  
+  
+  
+#container{
+    width:0px;
+    overflow-x:hidden;
+    display:none;
+    background-color:blue;
+    color:white;
+}
