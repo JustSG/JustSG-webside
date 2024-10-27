@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochamy kawę</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div id="gora1">
+        <a href="index.html">Strona główna</a>
+        <a href="zamowienia.html">Zamówienia</a>
+        <a href="blog.html">Blog</a>
+        <a href="http://gatunki-kawy.pl/">Gatunki kawy</a>
+      </div>
+      <div id="gora2">
+      <img src="logo.png" alt="Kawa">
+      </div>
+      <header>
+        <h1>Sklep z kawą</h1>
+      </header>
+      <div id="lewa">
+        <form>
+            Podaj numer kawy: <input type="number" id="nrKawy"><br>
+            Podaj wagę w dekagramach: <input type="number" id="waga"><br>
+            <input type="button" value="Zamów" onclick="oblicz()"><br>
+        </form>
+        <p id="wypisz"></p>
+          
+          <script>
+            function oblicz(){
+            let nrKawy = document.getElementById("nrKawy").value;
+            let waga = document.getElementById("waga").value;
+            if(nrKawy == 1 || nrKawy == 2 || nrKawy == 4){
+              if(nrKawy == 1){
+                document.getElementById("wypisz").innerHTML = "Koszt zamówienia wynosi: " + 5*waga;
+              }else if(nrKawy == 2){
+                document.getElementById("wypisz").innerHTML = "Koszt zamówienia wynosi: " + 7*waga;
+              }else if(nrKawy == 4){
+                document.getElementById("wypisz").innerHTML = "Koszt zamówienia wynosi: " + 6*waga;
+              }
+            }else{
+              document.getElementById("wypisz").innerHTML = "Koszt zamówienia wynosi: 0zł";
+            }
+            }
+          </script>
+      </div>
+      <div id="prawa">
+        <h3>Oferta</h3>
+        <ul>
+          <li>Arabica</li>
+          <li>Robusta</li>
+          <li id="przekresl">bezkofeinowa</li>
+          <li>zielona</li>
+        </ul>
+      </div>
+      <footer>
+        Stronę przygotował: <strong>00000000000</strong>
+      </footer>
+</body>
+</html>

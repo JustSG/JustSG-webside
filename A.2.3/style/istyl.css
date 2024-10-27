@@ -1,0 +1,50 @@
+.int{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.lk{
+    text-decoration: none;
+}
+
+.lek{
+    height: 100px;
+    width: 250px;
+    background-color: rgba(69, 69, 69, 0.8);
+    border: 0 auto;
+    border-radius: 10px;
+    line-height: 100px;
+    display: inline-block;
+    margin: 40px;
+    transition: 0.7s;
+}
+
+.lek:hover{
+    background-color: rgba(230, 235, 135, 0.28);
+    box-shadow: 0px 0px 10px 5px rgb(235, 227, 135);
+}
+
+fieldset{
+    border: 2px solid #fff;
+    color: white;
+    text-align: center;
+    width: 1010px;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+legend{
+    padding: 0 10px;
+}
+
+#container{
+    width:0px;
+    overflow-x:hidden;
+    display:none;
+    background-color:blue;
+    color:white;
+}

@@ -1,0 +1,38 @@
+body{
+    margin: 0 auto;
+    font-family: Arial;
+}
+header, footer{
+    background-color: saddlebrown;
+    color: #fff;
+    height: 100px;
+    box-sizing: border-box;
+}
+.lewy{
+    width: 55%;
+    font-size: 120%;
+    float: left;
+}
+.srodkowy{
+    width: 25%;
+    float: left;
+}
+.prawy{
+    width: 20%;
+    text-align: right;
+    float: right;
+}
+main{
+    background-color: snow;
+    padding: 70px;
+}
+a{
+    border: 2px dotted saddlebrown;
+    background-color: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+}
+ol {
+	list-style-type: lower-latin;
+}

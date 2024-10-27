@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>  
+<h3>FORMULARZ KONTAKTOWY</h3>
+<br>
+    
+    <form onsubmit="dane(); return false;">
+        Imię: <input type="text" id="imie"><br>
+        Nazwisko: <input type="text" id="nazwisko"><br>
+        E-mail: <input type="text" id="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required><br>
+        Usługa: <select id="wybierz">
+                    <option value="Naprawa Komputera">Naprawa Komputera</option>
+                    <option value="Odzyskiwanie Danych">Odzyskiwanie Danych</option>
+                    <option value="Problemy Z Oprogramowaniem">Problemy Z Oprogramowaniem</option>
+                    <option value="Konfiguracja Sieci LAN">Konfiguracja Sieci LAN</option>
+                    <option value="Inne">Inne</option>
+                </select><br>
+        <input type="checkbox" id="kostka" checked="true">Wyślij kopię wiadomości<br>
+        <input type="submit" value="Prześlij" id="baton1">
+        <input type="reset" value="Resetuj" id="baton2">
+        <div id="wyswietlin"></div>
+        <div id="wyswietle"></div>
+        <div id="wyswietlu"></div>
+       </form>
+       <br>
+
+    <script>
+        function dane(){
+            let imie = document.getElementById("imie").value;
+            let nazwisko = document.getElementById("nazwisko").value;
+            document.getElementById("wyswietlin").innerHTML = "<br>" + imie + " " + nazwisko + "<br>";
+
+            let mail = document.getElementById("mail").value
+            document.getElementById("wyswietle").innerHTML = mail.toLocaleLowerCase() + "<br>";
+
+            let wybierz = document.getElementById("wybierz").value;
+            document.getElementById("wyswietlu").innerHTML = "Usługa: " + wybierz + "<br>";
+        }
+
+    </script>
+</body>
+</html>

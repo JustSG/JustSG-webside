@@ -1,0 +1,15 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #99FFCC;
+}
+
+#baton2{
+    background-color: #FF0000;
+}
+#baton1{
+    background-color: #00FF00;
+}

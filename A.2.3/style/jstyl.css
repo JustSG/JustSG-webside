@@ -1,0 +1,227 @@
+*{
+  overflow: hidden;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html{
+  font-family: 'Balsamiq Sans', cursive;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-image:
+    radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #FF070700 100%),
+    radial-gradient(113% 91% at 11% 8%, #FF3E00FF 1%, #FF000000 99%),
+    radial-gradient(142% 91% at 83% 7%, #00FF4CFF 1%, #FFE50000 99%),
+    radial-gradient(142% 91% at -6% 92%, #FF0049FF 1%, #FF000000 99%),
+    radial-gradient(142% 91% at 111% 84%, #001EFFFF 0%, #00EFFFFF 100%);
+}
+
+body{
+  height: 100%;
+  margin: 0 auto;
+}
+
+img{
+  position: absolute;
+  right: -250px;
+  height: 240px;
+  width: 240px;
+  margin: 0 auto;
+  animation-name: slideup1;
+  animation-delay: 0.5s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  border-radius: 100%;
+  text-align: center;
+  top: 5.5%;
+}
+
+#box{
+  width: 750px;
+  height: 230px;
+  background:
+    linear-gradient(to right, black 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, black 4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, black 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, black 4px, transparent 4px) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-left: 140px;
+  margin-top: 55px;
+}
+
+#hi{
+  top: 70px;
+  position: absolute;
+  left: 200px;
+  color: #fff;
+  background: transparent;
+}
+
+#who{
+  position: absolute;
+  background-color: rgba(70, 70, 70, 0.5);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px black;
+  padding: 8px;
+  width: 400px;
+  height: 280px;
+  animation-name: slideup2;
+  animation-delay: 1.5s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  left: -425px;
+  top: 45%;
+  font-size: 17px;
+  text-align: center;
+  color: #fff;
+}
+
+#xp{
+  position: absolute;
+  background-color: rgba(70, 70, 70, 0.5);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px black;
+  padding: 8px;
+  padding-top: 45px;
+  width: 400px;
+  height: 245px;
+  animation-name: slideup3;
+  animation-delay: 1.5s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  right: -425px;
+  top: 45%;
+  text-align: center;
+  color: #fff;
+}
+
+#dc{
+  position: absolute;
+  background-color: rgb(49, 51, 56);
+  border: 4px solid rgb(43, 45, 49);
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  line-height: 50px;
+  animation-name: slideup4;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  bottom: -75px;
+  margin: 0 auto;
+  right: 37%;
+  transition: 0.5s;
+}
+
+#dcnc{
+  position: absolute;
+  background-color: rgb(88, 101, 242);
+  border: 4px solid rgb(71, 82, 196);
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  line-height: 50px;
+  animation-name: slideup4;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  bottom: -75px;
+  margin: 0 auto;
+  right: 37%;
+}
+
+#gh{
+  position: absolute;
+  background-color: #2b3137;
+  border: 4px solid #24292e;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  line-height: 50px;
+  animation-name: slideup4;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  bottom: -75px;
+  margin: 0 auto;
+  left: 37%;
+  transition: 0.5s;
+}
+
+#ghnc{
+  position: absolute;
+  background-color: #2dba4e;
+  border: 4px solid #26b347;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  line-height: 50px;
+  animation-name: slideup4;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  bottom: -75px;
+  margin: 0 auto;
+  left: 37%;
+}
+
+#dc:hover{
+  background-color: transparent;
+  border: 4px solid transparent;
+  color: transparent;
+}
+
+#gh:hover{
+  background-color: transparent;
+  border: 4px solid transparent;
+  color: transparent;
+}
+
+h1{
+  font-size: 40px;
+}
+
+a{
+  color: #fff;
+}
+
+@keyframes slideup1 {
+  0%{right:-410px}
+  100%{right:270px;}
+}
+
+@keyframes slideup2 {
+  0%{left:-420px}
+  100%{left:250px;}
+}
+
+@keyframes slideup3 {
+  0%{right:-420px}
+  100%{right:250px;}
+}
+
+@keyframes slideup4 {
+  0%{bottom:-75px}
+  100%{bottom:18px;}
+}

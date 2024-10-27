@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+   <meta charset="UTF-8">
+   <title>Funkcje</title>
+</head>
+<body>
+ <form onsubmit="witaj(); return false;">
+  <input type="text" id="pole" placeholder="napisz imię">
+  <input type="submit" value="kliknij" id="baton">
+   <div id="wyswietl"></div>
+ </form>
+  <br>
+  
+ <form onsubmit="witaj(); return false;">
+  <input type="number" id="la" placeholder="podaj liczbe"><br>
+  <input type="number" id="lb" placeholder="podaj liczbe"><br>
+  <div id="wynik"></div>
+ <br>
+  <input type="button" value="+" id="plus" onclick="dodawanie()"><br>
+  <input type="button" value="-" id="minus" onclick="odejmowanie()"><br>
+  <input type="button" value="*" id="razy" onclick="mnozenie()"><br>
+  <input type="button" value="/" id="podziel" onclick="dzielenie()"><br>
+ <br>
+ </form>
+  
+  
+ <select id="wybierz">
+   <option value="0">Zabrze</option>
+   <option value="1">Łódż</option>
+   <option value="2">Radom</option>
+   <option value="3">Głubczyce</option>
+ </select>
+ 
+ <script>
+ function witaj(){
+  let imie = document.getElementById("pole").value;
+  document.getElementById("wyswietl").innerHTML="witaj " + imie;
+}
+
+function dodawanie(){
+  let a = Number(document.getElementById("la").value);
+  let b = Number(document.getElementById("lb").value);
+  let wynik = a + b;
+  document.getElementById("wynik").innerHTML= wynik;
+}
+
+function odejmowanie(){
+  let a = Number(document.getElementById("la").value);
+  let b = Number(document.getElementById("lb").value);
+  let wynik = a - b;
+  document.getElementById("wynik").innerHTML= wynik;
+}
+
+function mnozenie(){
+  let a = Number(document.getElementById("la").value);
+  let b = Number(document.getElementById("lb").value);
+  let wynik = a * b;
+  document.getElementById("wynik").innerHTML= wynik;
+}
+
+function dzielenie(){
+  let a = Number(document.getElementById("la").value);
+  let b = Number(document.getElementById("lb").value);
+  let wynik = a / b;
+  document.getElementById("wynik").innerHTML= wynik;
+}
+ </script>
+ 
+</body>
+</head>
